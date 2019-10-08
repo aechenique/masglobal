@@ -2,15 +2,11 @@
 {
     using Test.Infrastructure;
 
-    public class Employee : IEmployee
+    public abstract class Employee : IEmployee
     {
         #region Fields
 
-        public int annualSalary => _employeeBase.contractTypeName == "HourlySalaryEmployee"
-            ? 120 * _employeeBase.hourlySalary * 12
-            : _employeeBase.monthlySalary * 12;
-
-        private IEmployeeBase _employeeBase;
+        protected IEmployeeBase _employeeBase;
 
         #endregion Fields
 
@@ -25,12 +21,17 @@
 
         #region Properties
 
+        public abstract decimal annualSalary
+        {
+            get;
+        }
+
         public string contractTypeName
         {
             get => _employeeBase.contractTypeName; set => _employeeBase.contractTypeName = value;
         }
 
-        public int hourlySalary
+        public decimal hourlySalary
         {
             get => _employeeBase.hourlySalary; set => _employeeBase.hourlySalary = value;
         }
@@ -40,7 +41,7 @@
             get => _employeeBase.id; set => _employeeBase.id = value;
         }
 
-        public int monthlySalary
+        public decimal monthlySalary
         {
             get => _employeeBase.monthlySalary; set => _employeeBase.monthlySalary = value;
         }

@@ -4,7 +4,7 @@
     {
         #region Properties
 
-        int annualSalary
+        decimal annualSalary
         {
             get;
         }

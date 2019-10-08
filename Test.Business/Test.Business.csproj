@@ -42,7 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeFactory.cs" />
     <Compile Include="EmployeeProvider.cs" />
+    <Compile Include="HourlyEmployee.cs" />
+    <Compile Include="MonthlyEmployee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

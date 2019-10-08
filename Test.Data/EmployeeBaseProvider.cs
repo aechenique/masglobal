@@ -2,8 +2,10 @@
 {
     using System.Collections.Generic;
     using System.ComponentModel.Composition;
+    using System.Configuration;
     using System.IO;
     using System.Linq;
+    using System.Net;
     using System.Reflection;
     using System.Web.Script.Serialization;
 
@@ -46,12 +48,11 @@
 
         private static void LoadData()
         {
-            var assembly = Assembly.GetExecutingAssembly();
-            var resourceName = "Test.Data.employees.json";
+            var request = HttpWebRequest.Create(ConfigurationManager.AppSettings["sourceUrl"]) as HttpWebRequest;
+            var response = request.GetResponse() as HttpWebResponse;
             var serializer = new JavaScriptSerializer { MaxJsonLength = int.MaxValue };
 
-            using (var stream = assembly.GetManifestResourceStream(resourceName))
-            using (var reader = new StreamReader(stream))
+            using (var reader = new StreamReader(response.GetResponseStream()))
             {
                 var source = reader.ReadToEnd();
                 _all = serializer.Deserialize<EmployeeBase[]>(source);

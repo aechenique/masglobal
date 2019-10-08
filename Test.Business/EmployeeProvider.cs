@@ -20,7 +20,7 @@
 
         public IEnumerable<IEmployee> GetEmployeeList(int? id = null)
         {
-            return BaseProvider.GetEmployeeBaseList(id).Select(e => new Employee(e));
+            return BaseProvider.GetEmployeeBaseList(id).Select(e => EmployeeFactory.GetInstance(e));
         }
 
         #endregion Methods

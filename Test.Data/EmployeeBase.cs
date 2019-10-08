@@ -11,7 +11,7 @@
             get; set;
         }
 
-        public int hourlySalary
+        public decimal hourlySalary
         {
             get; set;
         }
@@ -21,7 +21,7 @@
             get; set;
         }
 
-        public int monthlySalary
+        public decimal monthlySalary
         {
             get; set;
         }

@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    ViewBag.App = "employeeApp";
+}
+<section ng-controller="EmployeeListController">
+
+    <div class="jumbotron">
+        <p class="lead">
+            <input type="text" placeholder="ID of the employee" ng-model="query" />
+        </p>
+        <p><a href="#" class="btn btn-primary btn-lg" ng-click="getList()">Submit &raquo;</a></p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Contract Type</th>
+                        <th>Role</th>
+                        <th>Role description</th>
+                        <th>Hourly salary</th>
+                        <th>Monthly salary</th>
+                        <th>Annual salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="employee in employees">
+                        <th>{{employee.id}}</th>
+                        <th>{{employee.name}}</th>
+                        <th>{{employee.contractTypeName}}</th>
+                        <th>{{employee.roleName}}</th>
+                        <th>{{employee.roleDescription}}</th>
+                        <th>{{employee.hourlySalary | currency}}</th>
+                        <th>{{employee.monthlySalary | currency}}</th>
+                        <th>{{employee.annualSalary | currency}}</th>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+@section scripts{
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="~/Scripts/employees.js"></script>
+}

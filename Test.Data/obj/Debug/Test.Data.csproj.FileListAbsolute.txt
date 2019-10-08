@@ -1,0 +1,9 @@
+D:\Proyectos\Masglobal\Test\Test.Data\obj\Debug\Test.Data.csprojAssemblyReference.cache
+D:\Proyectos\Masglobal\Test\Test.Data\obj\Debug\Test.Data.csproj.CoreCompileInputs.cache
+D:\Proyectos\Masglobal\Test\Test.Data\bin\Debug\Test.Data.Module.dll
+D:\Proyectos\Masglobal\Test\Test.Data\bin\Debug\Test.Data.Module.pdb
+D:\Proyectos\Masglobal\Test\Test.Data\bin\Debug\Test.Infrastructure.dll
+D:\Proyectos\Masglobal\Test\Test.Data\bin\Debug\Test.Infrastructure.pdb
+D:\Proyectos\Masglobal\Test\Test.Data\obj\Debug\Test.Data.csproj.CopyComplete
+D:\Proyectos\Masglobal\Test\Test.Data\obj\Debug\Test.Data.Module.dll
+D:\Proyectos\Masglobal\Test\Test.Data\obj\Debug\Test.Data.Module.pdb

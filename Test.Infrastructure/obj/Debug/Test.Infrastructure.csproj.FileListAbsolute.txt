@@ -1,0 +1,6 @@
+D:\Proyectos\Masglobal\Test\Test.Infrastructure\bin\Debug\Test.Infrastructure.dll
+D:\Proyectos\Masglobal\Test\Test.Infrastructure\bin\Debug\Test.Infrastructure.pdb
+D:\Proyectos\Masglobal\Test\Test.Infrastructure\obj\Debug\Test.Infrastructure.csprojAssemblyReference.cache
+D:\Proyectos\Masglobal\Test\Test.Infrastructure\obj\Debug\Test.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Proyectos\Masglobal\Test\Test.Infrastructure\obj\Debug\Test.Infrastructure.dll
+D:\Proyectos\Masglobal\Test\Test.Infrastructure\obj\Debug\Test.Infrastructure.pdb
